@@ -1,0 +1,25 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="trips content">
+    <h2>All parameters:</h2>
+    <a>
+      <%= cookies %>
+      <%= sessionVariable %>
+      <p id="localStorage"></p>
+     
+    </a>
+
+  </div>
+  <%- include("./partials/footer.ejs") %>
+  
+
+  
+</body>
+<script type="text/javascript">
+  document.getElementById("localStorage").innerHTML = "Local storage: " + localStorage.getItem('localStorage');
+</script>
+</html>

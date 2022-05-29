@@ -1,0 +1,211 @@
+
+@media print{
+    a[href]:after {
+        content: none !important;
+    }
+	  p {
+    font-family: georgia, serif;
+    font-size: 14px;
+    color: blue;
+  }
+   nav{
+   display: none;
+ }
+
+}
+
+
+@media screen {
+  p {
+    font-family: verdana, sans-serif;
+    font-size: 17px;
+  }
+}
+
+
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+ nav ul ul {
+        display: none;
+      }
+      nav ul li:hover > ul {
+        display: block;
+      }
+      nav ul:after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      nav ul li {
+        float: left;
+        position: relative;
+        list-style-type: none;
+      }
+      nav ul li:hover {
+        background: rgba(19, 20, 123, 0.67);
+      }
+      nav ul li:hover a {
+        color: #fff;
+      }
+      nav ul li a {
+        display: block;
+        padding: 20px 30px;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgba(35, 17, 134, 0.8);
+        font-family: sans-serif;
+      }
+      nav ul ul {
+        background: #5f6975;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+      }
+      nav ul ul li {
+        float: none;
+        position: relative;
+      }
+      nav ul ul li a {
+        padding: 15px 10px;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      nav ul ul li a:hover {
+        background: rgba(19, 20, 123, 0.67);
+      }
+	  
+
+.header-container {
+    background-color: aqua;
+    background-image: url(images/lighting.jpg);
+    background-size: cover;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.header-container h1{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient( #190945, #190945);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.header-container h2{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-weight: 300;
+    background-image: linear-gradient( #190945, #190945);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.main-container{
+    float:left ;
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.hyperlinks-container{
+    float:right;
+    width: 30%;
+}
+
+
+ul li {
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-left: 35px;
+}
+ol li{
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+
+.Agency-logo {
+    width: 300px;
+    height: 250px;
+    margin-right: 50px;
+
+}
+
+header address ul {
+    font-style: normal;
+    list-style: none;
+}
+
+.address-line-item {
+    margin-left: -40px;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.address-line-item-icon {
+    width: 16px;
+    height: 16px;
+    background-color: rgb(18, 7, 88);
+    margin-right: 10px;
+    padding: 4px;
+    vertical-align: middle;
+}
+.address-line-item-icon {
+    border-radius: 12px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: yellow;
+    color: white;
+    text-align: center;
+  }
+  p {
+  color: black;
+  text-indent: 30px;
+}
+
+
+  #destinations {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #destinations td, #destinations th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #destinations tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #destinations tr:hover {background-color: #ddd;}
+  
+  #destinations th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #300f8c;
+    color: white;
+  }

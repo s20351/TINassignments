@@ -1,0 +1,25 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="trips content">
+    <h2>All trips:</h2>
+
+    <% if (trips.length > 0) { %>
+      <% trips.forEach(trip => { %>
+        <a class="single" href="/trips/<%= trip._id %>">
+          <h3 class="destination"><%= trip.destination %></h3>
+          <p class="city"><%= trip.name %></p>
+        </a>
+      <% }) %>
+    <% } else { %>
+      <p>There are no trips to display...</p>
+    <% } %>
+    
+  </div>
+  
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>

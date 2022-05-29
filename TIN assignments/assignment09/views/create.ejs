@@ -1,0 +1,37 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <h2>Add parameters:</h2>
+  <div class="create-trip content">
+    <form action="/trips" method="POST">
+
+      <label for="longcookie">Set long-term cookie:</label>
+      <input type="text" id="longcookie" name="longcookie" required>
+
+      <label for="sessioncookie">Set session cookie:</label>
+      <input type="text" id="sessioncookie" name="sessioncookie" required>
+
+      <label for="session">Set session variable:</label>
+      <input id="session" name="session" required></input>
+
+      <label for="localStorage">Set localStorage:</label>
+      <input id="localStorage" name="localStorage" required></input>
+
+      <button onclick="store()">Submit</button>
+
+      <script  type="text/javascript">
+        function store(){
+           var input= document.getElementById("localStorage");
+           localStorage.setItem("localStorage", input.value);
+          }
+      </script>
+
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="details content">
+    <h2>Trip to: <%=  trip.destination %></h2>
+    <div class="content">
+      <p>Destination city: <%= trip.city %></p>
+      <p>Hotel: <%= trip.hotel%></p>
+      <p>Dates: <%= trip.dates%></p>
+    </div>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
